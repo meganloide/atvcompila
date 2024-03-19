@@ -1,7 +1,7 @@
 from flask import *
 import dao
 
-#isntancia o servidor flask
+
 app = Flask(__name__)
 app.secret_key = '3j45h3j2k4h5kj3h45h23JHGJHgh'
 
