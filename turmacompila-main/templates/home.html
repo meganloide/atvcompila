@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>minha página web</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div>
+        <h1>Meu sistema web</h1>
+    </div>
+
+    <div class="div-inferior">
+        <a style="color:red">{{ msg}}</a>
+        <form action="/verificarlogin" method="post">
+            <label>Login</label><br>
+            <input type="email" name="emailusuario"><br><br>
+
+            <label>Senha</label><br>
+            <input type="password" name="senhausuario" ><br>
+            <button type="submit">Login</button>
+
+        </form>
+        <div class="div-inscricao">
+            <a href="/inscricao">Inscrever</a>
+        </div>
+
+    </div>
+</body>
+</html>

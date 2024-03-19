@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>minha página web</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div>
+        <h1>Meu sistema web</h1>
+        <h2>Cadastrar usuário</h2>
+    </div>
+    <div class="div-inferior">
+        <form action="/cadastrarusuario" method="post">
+            <label>Nome</label>
+            <input type="text" name="nomeusuario"><br><br>
+
+            <label>Idade</label>
+            <input type="number" name="idadeusuario"><br><br>
+
+            <label>Login</label>
+            <input type="email" name="emailusuario"><br><br>
+
+            <label>Senha</label>
+            <input type="password" name="senhausuario" ><br><br>
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </div>
+</body>
+</html>
