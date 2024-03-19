@@ -15,10 +15,10 @@ def conectar_localBD():
 
 def conectar_cloudBD():
     con = psycopg2.connect(
-        host= 'dpg-cnsev55a73kc73b4k0i0-a.oregon-postgres.render.com',
-        database= 'compiladores_qfs8',
-        user= 'compiladores_qfs8_user',
-        password= 't6cN74nk6qlpCbundEsSlGWbNfeejLhS'
+        host= 'dpg-cnsfh76n7f5s73dau5gg-a.oregon-postgres.render.com',
+        database= 'compiladores_vq62',
+        user= 'compiladores_vq62_user',
+        password= 'rp9gwbRJIV5JJ76Y3KgmA6GdKno9Xr8a'
     )
     return con
 
