@@ -2,7 +2,6 @@ import requests
 import psycopg2
 
 
-contatos_por_usuario = {} #estrutura adicionada para armazenar os dados dos contatos
 
 def conectarDB():
     return conectar_localBD()
@@ -87,15 +86,7 @@ def registrar_contato(nome, email, comentario, cep, email_login):
     cidade = endereco['result']['city']
     estado = endereco['result']['state']
 
-    contato = { #criação de dicionario de contato
-        'nome': nome,
-        'email': email,
-        'comentario': comentario,
-        'rua': rua,
-        'cidade': cidade,
-        'estado': estado,
-        'email_login': email_login
-    }
+   
 
     conexao = conectarDB()
     cur = conexao.cursor()
